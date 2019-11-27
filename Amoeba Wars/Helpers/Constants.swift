@@ -20,4 +20,5 @@ struct GameConfig {
     static let HistolyticaCost = 10
     static let FowleriCost = 25
     static let ProteusCost = 50
+    static let HistolyticaLeft = 50
 }

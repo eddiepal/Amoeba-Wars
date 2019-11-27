@@ -34,6 +34,9 @@ class GameScene: SKScene {
         addChild(background)
         
         // MARK: Add histolytica button
+        histolyticaButton = ButtonNode(iconName: ImageName.HistolyticaLeft, text: String(GameConfig.HistolyticaCost), onButtonPress: histolyticaPressed)
+        histolyticaButton.position = CGPoint(x: size.width * 0.25, y: margin + histolyticaButton.size.height / 2)
+        addChild(histolyticaButton)
         
         // MARK: Add fowleri button
         
@@ -54,5 +57,8 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) { }
     
     //MARK: - Button methods
+    func histolyticaPressed() {
+        print("Histolytica pressed!")
+    }
     
 }

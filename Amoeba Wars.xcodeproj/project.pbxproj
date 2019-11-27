@@ -29,6 +29,7 @@
 		59F5DA05238ED4BD00FA5AB1 /* boom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F9238ED4BD00FA5AB1 /* boom.wav */; };
 		59F5DA07238ED60300FA5AB1 /* MyMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5DA06238ED60300FA5AB1 /* MyMath.swift */; };
 		59F5DA09238ED63100FA5AB1 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5DA08238ED63100FA5AB1 /* SoundManager.swift */; };
+		59F5DA0B238ED70500FA5AB1 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5DA0A238ED70500FA5AB1 /* ButtonNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		59F5D9F9238ED4BD00FA5AB1 /* boom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boom.wav; sourceTree = "<group>"; };
 		59F5DA06238ED60300FA5AB1 /* MyMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMath.swift; sourceTree = "<group>"; };
 		59F5DA08238ED63100FA5AB1 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		59F5DA0A238ED70500FA5AB1 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				59F5D9EC238ED33800FA5AB1 /* Constants.swift */,
 				59F5DA06238ED60300FA5AB1 /* MyMath.swift */,
 				59F5DA08238ED63100FA5AB1 /* SoundManager.swift */,
+				59F5DA0A238ED70500FA5AB1 /* ButtonNode.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				59F5D9D1238ECFA900FA5AB1 /* AppDelegate.swift in Sources */,
 				59F5D9ED238ED33800FA5AB1 /* Constants.swift in Sources */,
 				59F5DA09238ED63100FA5AB1 /* SoundManager.swift in Sources */,
+				59F5DA0B238ED70500FA5AB1 /* ButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

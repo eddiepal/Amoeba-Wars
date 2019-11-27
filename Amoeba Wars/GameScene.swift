@@ -2,6 +2,19 @@ import SpriteKit
 
 class GameScene: SKScene {
     
+    let margin = CGFloat(30)
+    
+    var histolyticaButton: ButtonNode!
+    var fowleriButton: ButtonNode!
+    var proteusButton: ButtonNode!
+    
+    let coinLeftLabel = SKLabelNode(fontNamed: "Courier-Bold")
+    let coinRightLabel = SKLabelNode(fontNamed: "Courier-Bold")
+    
+    var lastUpdateTimeInterval: TimeInterval = 0
+    
+    var gameOver = false
+    
     override func didMove(to view: SKView) {
         
         

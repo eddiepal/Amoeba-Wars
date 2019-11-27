@@ -6,6 +6,7 @@ import UIKit
 struct ImageName {
     static let Background = "Background"
     static let Button = "Button"
+    static let HistolyticaLeft = "HistolyticaLeft"
 }
 
 struct Layer {
@@ -20,5 +21,4 @@ struct GameConfig {
     static let HistolyticaCost = 10
     static let FowleriCost = 25
     static let ProteusCost = 50
-    static let HistolyticaLeft = 50
 }

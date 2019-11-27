@@ -27,6 +27,8 @@
 		59F5DA03238ED4BD00FA5AB1 /* attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F7238ED4BD00FA5AB1 /* attack.wav */; };
 		59F5DA04238ED4BD00FA5AB1 /* lioncry3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F8238ED4BD00FA5AB1 /* lioncry3.wav */; };
 		59F5DA05238ED4BD00FA5AB1 /* boom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F9238ED4BD00FA5AB1 /* boom.wav */; };
+		59F5DA07238ED60300FA5AB1 /* MyMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5DA06238ED60300FA5AB1 /* MyMath.swift */; };
+		59F5DA09238ED63100FA5AB1 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5DA08238ED63100FA5AB1 /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		59F5D9F7238ED4BD00FA5AB1 /* attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = attack.wav; sourceTree = "<group>"; };
 		59F5D9F8238ED4BD00FA5AB1 /* lioncry3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lioncry3.wav; sourceTree = "<group>"; };
 		59F5D9F9238ED4BD00FA5AB1 /* boom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boom.wav; sourceTree = "<group>"; };
+		59F5DA06238ED60300FA5AB1 /* MyMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMath.swift; sourceTree = "<group>"; };
+		59F5DA08238ED63100FA5AB1 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				59F5D9EC238ED33800FA5AB1 /* Constants.swift */,
+				59F5DA06238ED60300FA5AB1 /* MyMath.swift */,
+				59F5DA08238ED63100FA5AB1 /* SoundManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -227,8 +233,10 @@
 			files = (
 				59F5D9D7238ECFA900FA5AB1 /* GameScene.swift in Sources */,
 				59F5D9D9238ECFA900FA5AB1 /* GameViewController.swift in Sources */,
+				59F5DA07238ED60300FA5AB1 /* MyMath.swift in Sources */,
 				59F5D9D1238ECFA900FA5AB1 /* AppDelegate.swift in Sources */,
 				59F5D9ED238ED33800FA5AB1 /* Constants.swift in Sources */,
+				59F5DA09238ED63100FA5AB1 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

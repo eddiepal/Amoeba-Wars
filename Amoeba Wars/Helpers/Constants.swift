@@ -14,9 +14,5 @@ struct Layer {
 struct PhysicsCategory {
 }
 
-struct SoundFile {
-     static let BackgroundMusic = "Latin_Industries.mp3"
-}
-
 struct GameConfig {
 }

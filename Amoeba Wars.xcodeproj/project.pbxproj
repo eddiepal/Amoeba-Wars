@@ -15,6 +15,18 @@
 		59F5D9DE238ECFAA00FA5AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9DD238ECFAA00FA5AB1 /* Assets.xcassets */; };
 		59F5D9E1238ECFAA00FA5AB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9DF238ECFAA00FA5AB1 /* LaunchScreen.storyboard */; };
 		59F5D9ED238ED33800FA5AB1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5D9EC238ED33800FA5AB1 /* Constants.swift */; };
+		59F5D9FA238ED4BD00FA5AB1 /* lionlaugh4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9EE238ED4BC00FA5AB1 /* lionlaugh4.wav */; };
+		59F5D9FB238ED4BD00FA5AB1 /* defend.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9EF238ED4BC00FA5AB1 /* defend.wav */; };
+		59F5D9FC238ED4BD00FA5AB1 /* pew2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F0238ED4BD00FA5AB1 /* pew2.wav */; };
+		59F5D9FD238ED4BD00FA5AB1 /* bigHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F1238ED4BD00FA5AB1 /* bigHit.wav */; };
+		59F5D9FE238ED4BD00FA5AB1 /* mass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F2238ED4BD00FA5AB1 /* mass.wav */; };
+		59F5D9FF238ED4BD00FA5AB1 /* pew.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F3238ED4BD00FA5AB1 /* pew.wav */; };
+		59F5DA00238ED4BD00FA5AB1 /* Latin_Industries.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F4238ED4BD00FA5AB1 /* Latin_Industries.mp3 */; };
+		59F5DA01238ED4BD00FA5AB1 /* smallHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F5238ED4BD00FA5AB1 /* smallHit.wav */; };
+		59F5DA02238ED4BD00FA5AB1 /* spawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F6238ED4BD00FA5AB1 /* spawn.wav */; };
+		59F5DA03238ED4BD00FA5AB1 /* attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F7238ED4BD00FA5AB1 /* attack.wav */; };
+		59F5DA04238ED4BD00FA5AB1 /* lioncry3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F8238ED4BD00FA5AB1 /* lioncry3.wav */; };
+		59F5DA05238ED4BD00FA5AB1 /* boom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9F9238ED4BD00FA5AB1 /* boom.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +40,18 @@
 		59F5D9E0238ECFAA00FA5AB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59F5D9E2238ECFAA00FA5AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F5D9EC238ED33800FA5AB1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		59F5D9EE238ED4BC00FA5AB1 /* lionlaugh4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lionlaugh4.wav; sourceTree = "<group>"; };
+		59F5D9EF238ED4BC00FA5AB1 /* defend.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = defend.wav; sourceTree = "<group>"; };
+		59F5D9F0238ED4BD00FA5AB1 /* pew2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pew2.wav; sourceTree = "<group>"; };
+		59F5D9F1238ED4BD00FA5AB1 /* bigHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bigHit.wav; sourceTree = "<group>"; };
+		59F5D9F2238ED4BD00FA5AB1 /* mass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mass.wav; sourceTree = "<group>"; };
+		59F5D9F3238ED4BD00FA5AB1 /* pew.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pew.wav; sourceTree = "<group>"; };
+		59F5D9F4238ED4BD00FA5AB1 /* Latin_Industries.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Latin_Industries.mp3; sourceTree = "<group>"; };
+		59F5D9F5238ED4BD00FA5AB1 /* smallHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smallHit.wav; sourceTree = "<group>"; };
+		59F5D9F6238ED4BD00FA5AB1 /* spawn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spawn.wav; sourceTree = "<group>"; };
+		59F5D9F7238ED4BD00FA5AB1 /* attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = attack.wav; sourceTree = "<group>"; };
+		59F5D9F8238ED4BD00FA5AB1 /* lioncry3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lioncry3.wav; sourceTree = "<group>"; };
+		59F5D9F9238ED4BD00FA5AB1 /* boom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boom.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +125,18 @@
 		59F5D9EB238ED00E00FA5AB1 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				59F5D9F7238ED4BD00FA5AB1 /* attack.wav */,
+				59F5D9F1238ED4BD00FA5AB1 /* bigHit.wav */,
+				59F5D9F9238ED4BD00FA5AB1 /* boom.wav */,
+				59F5D9EF238ED4BC00FA5AB1 /* defend.wav */,
+				59F5D9F4238ED4BD00FA5AB1 /* Latin_Industries.mp3 */,
+				59F5D9F8238ED4BD00FA5AB1 /* lioncry3.wav */,
+				59F5D9EE238ED4BC00FA5AB1 /* lionlaugh4.wav */,
+				59F5D9F2238ED4BD00FA5AB1 /* mass.wav */,
+				59F5D9F3238ED4BD00FA5AB1 /* pew.wav */,
+				59F5D9F0238ED4BD00FA5AB1 /* pew2.wav */,
+				59F5D9F5238ED4BD00FA5AB1 /* smallHit.wav */,
+				59F5D9F6238ED4BD00FA5AB1 /* spawn.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -164,8 +200,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				59F5D9DC238ECFA900FA5AB1 /* Main.storyboard in Resources */,
+				59F5DA05238ED4BD00FA5AB1 /* boom.wav in Resources */,
+				59F5DA02238ED4BD00FA5AB1 /* spawn.wav in Resources */,
+				59F5DA03238ED4BD00FA5AB1 /* attack.wav in Resources */,
 				59F5D9DE238ECFAA00FA5AB1 /* Assets.xcassets in Resources */,
+				59F5D9FB238ED4BD00FA5AB1 /* defend.wav in Resources */,
 				59F5D9E1238ECFAA00FA5AB1 /* LaunchScreen.storyboard in Resources */,
+				59F5D9FC238ED4BD00FA5AB1 /* pew2.wav in Resources */,
+				59F5D9FF238ED4BD00FA5AB1 /* pew.wav in Resources */,
+				59F5DA04238ED4BD00FA5AB1 /* lioncry3.wav in Resources */,
+				59F5D9FD238ED4BD00FA5AB1 /* bigHit.wav in Resources */,
+				59F5D9FE238ED4BD00FA5AB1 /* mass.wav in Resources */,
+				59F5DA00238ED4BD00FA5AB1 /* Latin_Industries.mp3 in Resources */,
+				59F5D9FA238ED4BD00FA5AB1 /* lionlaugh4.wav in Resources */,
+				59F5DA01238ED4BD00FA5AB1 /* smallHit.wav in Resources */,
 				59F5D9D5238ECFA900FA5AB1 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

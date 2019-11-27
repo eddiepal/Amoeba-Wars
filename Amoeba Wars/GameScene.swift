@@ -9,7 +9,16 @@ class GameScene: SKScene {
         
         // MARK: Start background music
         
+        let bgMusic = SKAudioNode(fileNamed: SoundFile.BackgroundMusic)
+        bgMusic.autoplayLooped = true
+        addChild(bgMusic)
+        
         // MARK: Add background
+        
+        let background = SKSpriteNode(imageNamed: ImageName.Background)
+        background.position = CGPoint(x: size.width/2, y: size.height/2)
+        background.zPosition = Layer.Background
+        addChild(background)
         
         // MARK: Add histolytica button
         

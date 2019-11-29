@@ -10,6 +10,7 @@
 		596C27B623914769006A805F /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B523914769006A805F /* SpriteComponent.swift */; };
 		596C27B8239147E8006A805F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B7239147E8006A805F /* Base.swift */; };
 		596C27BA23914806006A805F /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B923914806006A805F /* EntityManager.swift */; };
+		596C27BC239149F0006A805F /* TeamComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27BB239149F0006A805F /* TeamComponent.swift */; };
 		59F5D9D1238ECFA900FA5AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5D9D0238ECFA900FA5AB1 /* AppDelegate.swift */; };
 		59F5D9D5238ECFA900FA5AB1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9D4238ECFA900FA5AB1 /* Actions.sks */; };
 		59F5D9D7238ECFA900FA5AB1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5D9D6238ECFA900FA5AB1 /* GameScene.swift */; };
@@ -39,6 +40,7 @@
 		596C27B523914769006A805F /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		596C27B7239147E8006A805F /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		596C27B923914806006A805F /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		596C27BB239149F0006A805F /* TeamComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamComponent.swift; sourceTree = "<group>"; };
 		59F5D9CD238ECFA900FA5AB1 /* Amoeba Wars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amoeba Wars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F5D9D0238ECFA900FA5AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F5D9D4238ECFA900FA5AB1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				596C27B523914769006A805F /* SpriteComponent.swift */,
+				596C27BB239149F0006A805F /* TeamComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				596C27BA23914806006A805F /* EntityManager.swift in Sources */,
+				596C27BC239149F0006A805F /* TeamComponent.swift in Sources */,
 				59F5D9D7238ECFA900FA5AB1 /* GameScene.swift in Sources */,
 				59F5D9D9238ECFA900FA5AB1 /* GameViewController.swift in Sources */,
 				596C27B623914769006A805F /* SpriteComponent.swift in Sources */,

@@ -119,7 +119,25 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { }
     
-    override func update(_ currentTime: TimeInterval) { }
+    override func update(_ currentTime: TimeInterval) {
+        
+        let deltaTime = currentTime - lastUpdateTimeInterval
+        lastUpdateTimeInterval = currentTime
+        
+        entityManager.update(deltaTime)
+        
+        // update player left coins
+        if let playerLeft = entityManager.base(for: .teamLeft),
+            let playerLeftBase = playerLeft.component(ofType: BaseComponent.self) {
+            coinLeftLabel.text = "\(playerLeftBase.coins)"
+        }
+        
+        // update player right coins
+        if let playerRight = entityManager.base(for: .teamRight),
+            let playerRightBase = playerRight.component(ofType: BaseComponent.self) {
+            coinRightLabel.text = "\(playerRightBase.coins)"
+        }
+    }
     
     //MARK: - Button methods
     func histolyticaPressed() {

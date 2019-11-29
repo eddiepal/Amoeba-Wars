@@ -12,6 +12,7 @@ class Base: GKEntity {
         addComponent(spriteComponent)
         
         addComponent(TeamComponent(team: team))
+        addComponent(BaseComponent())
     }
     
     required init?(coder aDecoder: NSCoder) {

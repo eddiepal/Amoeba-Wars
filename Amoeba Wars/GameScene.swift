@@ -15,10 +15,14 @@ class GameScene: SKScene {
     
     var gameOver = false
     
+    var entityManager: EntityManager!
+    
     override func didMove(to view: SKView) {
         
         
         // MARK: Create entity manager
+        
+        entityManager = EntityManager(scene: self)
         
         // MARK: Start background music
         
@@ -83,19 +87,33 @@ class GameScene: SKScene {
         self.addChild(coinRightLabel)
         
         // MARK: Add base left
-        let baseLeft = SKSpriteNode(imageNamed: ImageName.BaseLeft)
+        //let baseLeft = SKSpriteNode(imageNamed: ImageName.BaseLeft)
         
-        baseLeft.position = CGPoint(x: baseLeft.size.width/2 + margin,
-                                    y: size.height/2)
-        addChild(baseLeft)
+        //baseLeft.position = CGPoint(x: baseLeft.size.width/2 + margin,
+         //                           y: size.height/2)
+        //addChild(baseLeft)
+        
+        let baseLeft = Base(imageName: ImageName.Base_Left_Attack)
+        if let spriteComponent = baseLeft.component(ofType: SpriteComponent.self) {
+            spriteComponent.node.position = CGPoint(x: spriteComponent.node.size.width/2 + margin, y: size.height/2)
+        }
+        entityManager.add(baseLeft)
 
         
         // MARK: Add base right
-        let baseRight = SKSpriteNode(imageNamed: ImageName.BaseRight)
+        //let baseRight = SKSpriteNode(imageNamed: ImageName.BaseRight)
         
-        baseRight.position = CGPoint(x: size.width - margin - baseRight.size.width/2,
-                                    y: size.height/2)
-        addChild(baseRight)
+        //baseRight.position = CGPoint(x: size.width - margin - baseRight.size.width/2,
+         //                           y: size.height/2)
+        //addChild(baseRight)
+        
+        let baseRight = Base(imageName: ImageName.Base_Right_Attack)
+        if let spriteComponent = baseRight.component(ofType: SpriteComponent.self) {
+            spriteComponent.node.position = CGPoint(x: size.width - margin - spriteComponent.node.size.width/2, y: size.height/2)
+        }
+        entityManager.add(baseRight)
+        
+
         
     }
     

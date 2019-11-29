@@ -10,8 +10,8 @@ struct ImageName {
     static let FowleriLeft = "FowleriLeft"
     static let ProteusLeft = "ProteusLeft"
     static let Coin = "Coin"
-    static let BaseLeft = "Base_Left_Attack"
-    static let BaseRight = "Base_Right_Attack"
+    static let Base_Left_Attack = "Base_Left_Attack"
+    static let Base_Right_Attack = "Base_Right_Attack"
 }
 
 struct Layer {

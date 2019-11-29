@@ -83,8 +83,19 @@ class GameScene: SKScene {
         self.addChild(coinRightLabel)
         
         // MARK: Add base left
+        let baseLeft = SKSpriteNode(imageNamed: ImageName.BaseLeft)
+        
+        baseLeft.position = CGPoint(x: baseLeft.size.width/2 + margin,
+                                    y: size.height/2)
+        addChild(baseLeft)
+
         
         // MARK: Add base right
+        let baseRight = SKSpriteNode(imageNamed: ImageName.BaseRight)
+        
+        baseRight.position = CGPoint(x: size.width - margin - baseRight.size.width/2,
+                                    y: size.height/2)
+        addChild(baseRight)
         
     }
     

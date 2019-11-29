@@ -13,8 +13,8 @@ struct ImageName {
 }
 
 struct Layer {
-    static let Background: CGFloat = 0
-    static let Button: CGFloat = 10
+    static let Background: CGFloat = -500
+    static let Button: CGFloat = 4
     static let Left: CGFloat = 5
     static let Right: CGFloat = 5
     static let HUD: CGFloat = 1

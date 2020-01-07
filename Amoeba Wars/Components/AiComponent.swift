@@ -26,17 +26,20 @@ class AiComponent: GKComponent {
                 return
         }
         
-        if amoebaChoice == .histolytica && baseComponent.coins >= GameConfig.HistolyticaCost {
+        if amoebaChoice == .histolytica && baseComponent.coins >= GameConfig.HistolyticaCost
+        {
             entityManager.spawnHistolytica(team: teamComponent.team)
             amoebaChoice = AmoebaType.allValues[Int(arc4random()) % AmoebaType.allValues.count]
         }
         
-        if amoebaChoice == .fowleri && baseComponent.coins >= GameConfig.FowleriCost {
+        if amoebaChoice == .fowleri && baseComponent.coins >= GameConfig.FowleriCost
+        {
             entityManager.spawnFowleri(team: teamComponent.team)
             amoebaChoice = AmoebaType.allValues[Int(arc4random()) % AmoebaType.allValues.count]
         }
         
-        if amoebaChoice == .proteus && baseComponent.coins >= GameConfig.ProteusCost {
+        if amoebaChoice == .proteus && baseComponent.coins >= GameConfig.ProteusCost
+        {
             entityManager.spawnProteus(team: teamComponent.team)
             amoebaChoice = AmoebaType.allValues[Int(arc4random()) % AmoebaType.allValues.count]
         }

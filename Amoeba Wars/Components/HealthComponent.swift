@@ -38,10 +38,13 @@ class HealthComponent: GKComponent {
         
         healthBar.run(SKAction.group([hitSound, scaleAction]))
         
-        if currentHealth == 0 {
-            if let entity = entity {
+        if currentHealth == 0
+        {
+            if let entity = entity
+            {
                 let baseComponent = entity.component(ofType: BaseComponent.self)
-                if baseComponent == nil {
+                if baseComponent == nil
+                {
                     entityManager.remove(entity)
                 }
             }

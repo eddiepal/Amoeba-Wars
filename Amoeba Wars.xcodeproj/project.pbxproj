@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5921EC3423C4C75B00952C42 /* Fowleri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5921EC3323C4C75B00952C42 /* Fowleri.swift */; };
+		5921EC3623C4C76500952C42 /* Proteus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5921EC3523C4C76500952C42 /* Proteus.swift */; };
 		596C27B623914769006A805F /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B523914769006A805F /* SpriteComponent.swift */; };
 		596C27B8239147E8006A805F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B7239147E8006A805F /* Base.swift */; };
 		596C27BA23914806006A805F /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B923914806006A805F /* EntityManager.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5921EC3323C4C75B00952C42 /* Fowleri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fowleri.swift; sourceTree = "<group>"; };
+		5921EC3523C4C76500952C42 /* Proteus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proteus.swift; sourceTree = "<group>"; };
 		596C27B523914769006A805F /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		596C27B7239147E8006A805F /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		596C27B923914806006A805F /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				596C27B7239147E8006A805F /* Base.swift */,
 				596C27B923914806006A805F /* EntityManager.swift */,
 				59AB006423C4A359005356D6 /* Histolytica.swift */,
+				5921EC3323C4C75B00952C42 /* Fowleri.swift */,
+				5921EC3523C4C76500952C42 /* Proteus.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5921EC3423C4C75B00952C42 /* Fowleri.swift in Sources */,
 				596C27C023914B24006A805F /* BaseComponent.swift in Sources */,
+				5921EC3623C4C76500952C42 /* Proteus.swift in Sources */,
 				596C27BA23914806006A805F /* EntityManager.swift in Sources */,
 				59AB006723C4A717005356D6 /* MoveBehavior.swift in Sources */,
 				596C27BE23914AF2006A805F /* TeamComponent.swift in Sources */,

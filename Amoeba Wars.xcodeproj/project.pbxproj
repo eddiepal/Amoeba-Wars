@@ -12,6 +12,7 @@
 		596C27BA23914806006A805F /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B923914806006A805F /* EntityManager.swift */; };
 		596C27BE23914AF2006A805F /* TeamComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27BD23914AF2006A805F /* TeamComponent.swift */; };
 		596C27C023914B24006A805F /* BaseComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27BF23914B24006A805F /* BaseComponent.swift */; };
+		59AB006523C4A359005356D6 /* Histolytica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB006423C4A359005356D6 /* Histolytica.swift */; };
 		59F5D9D1238ECFA900FA5AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5D9D0238ECFA900FA5AB1 /* AppDelegate.swift */; };
 		59F5D9D5238ECFA900FA5AB1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59F5D9D4238ECFA900FA5AB1 /* Actions.sks */; };
 		59F5D9D7238ECFA900FA5AB1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5D9D6238ECFA900FA5AB1 /* GameScene.swift */; };
@@ -43,6 +44,7 @@
 		596C27B923914806006A805F /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
 		596C27BD23914AF2006A805F /* TeamComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamComponent.swift; sourceTree = "<group>"; };
 		596C27BF23914B24006A805F /* BaseComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseComponent.swift; sourceTree = "<group>"; };
+		59AB006423C4A359005356D6 /* Histolytica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Histolytica.swift; sourceTree = "<group>"; };
 		59F5D9CD238ECFA900FA5AB1 /* Amoeba Wars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amoeba Wars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F5D9D0238ECFA900FA5AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F5D9D4238ECFA900FA5AB1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				596C27B7239147E8006A805F /* Base.swift */,
 				596C27B923914806006A805F /* EntityManager.swift */,
+				59AB006423C4A359005356D6 /* Histolytica.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				596C27B8239147E8006A805F /* Base.swift in Sources */,
 				59F5DA09238ED63100FA5AB1 /* SoundManager.swift in Sources */,
 				59F5DA0B238ED70500FA5AB1 /* ButtonNode.swift in Sources */,
+				59AB006523C4A359005356D6 /* Histolytica.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -68,4 +68,28 @@ class EntityManager {
         }
         return nil
     }
+    
+    func spawnHistolytica(team: Team) {
+        // 1
+        guard let teamEntity = base(for: team),
+            let teamBaseComponent = teamEntity.component(ofType: BaseComponent.self),
+            let teamSpriteComponent = teamEntity.component(ofType: SpriteComponent.self) else {
+                return
+        }
+        
+        // 2
+        if teamBaseComponent.coins < GameConfig.HistolyticaCost {
+            return
+        }
+        teamBaseComponent.coins -= GameConfig.HistolyticaCost
+        scene.run(SoundManager.sharedInstance.soundSpawn)
+        
+        // 3
+        let amoeba = Histolytica(team: team)
+        if let spriteComponent = amoeba.component(ofType: SpriteComponent.self) {
+            spriteComponent.node.position = CGPoint(x: teamSpriteComponent.node.position.x, y: CGFloat.random(min: scene.size.height * 0.25, max: scene.size.height * 0.75))
+            spriteComponent.node.zPosition = Layer.Amoeba
+        }
+        add(amoeba)
+    }
 }

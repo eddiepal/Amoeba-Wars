@@ -142,6 +142,7 @@ class GameScene: SKScene {
     //MARK: - Button methods
     func histolyticaPressed() {
         print("Histolytica pressed!")
+        entityManager.spawnHistolytica(team: .teamLeft)
     }
     
     func fowleriPressed() {

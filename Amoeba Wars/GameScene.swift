@@ -111,6 +111,7 @@ class GameScene: SKScene {
         if let spriteComponent = baseRight.component(ofType: SpriteComponent.self) {
             spriteComponent.node.position = CGPoint(x: size.width - margin - spriteComponent.node.size.width/2, y: size.height/2)
         }
+        baseRight.addComponent(AiComponent(entityManager: entityManager))
         entityManager.add(baseRight)
         
 

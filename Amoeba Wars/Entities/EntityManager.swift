@@ -11,7 +11,9 @@ class EntityManager {
     lazy var componentSystems: [GKComponentSystem] = {
         let baseSystem = GKComponentSystem(componentClass: BaseComponent.self)
         let moveSystem = GKComponentSystem(componentClass: MoveComponent.self)
-        return [baseSystem, moveSystem]
+        let aiSystem = GKComponentSystem(componentClass: AiComponent.self)
+        let attackSystem = GKComponentSystem(componentClass: AttackComponent.self)
+        return [baseSystem, moveSystem, aiSystem]
     }()
     
     // 2
@@ -162,5 +164,18 @@ class EntityManager {
             }
         }
         return moveComponents
+    }
+    
+    func entitiesForTeam(_ team: Team) -> [GKEntity] {
+        
+        return entities.compactMap{ entity in
+            if let teamComponent = entity.component(ofType: TeamComponent.self) {
+                if teamComponent.team == team {
+                    return entity
+                }
+            }
+            return nil
+        }
+        
     }
 }

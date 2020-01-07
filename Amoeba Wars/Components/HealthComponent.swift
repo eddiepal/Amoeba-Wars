@@ -1,4 +1,3 @@
-
 import SpriteKit
 import GameplayKit
 
@@ -6,10 +5,10 @@ class HealthComponent: GKComponent {
     
     let maxHealth: CGFloat
     var currentHealth: CGFloat
-    let healthBarFullWidth: CGFloat
+    let healthBarMaxWidth: CGFloat
     let healthBar: SKShapeNode
     let entityManager: EntityManager
-    let soundAction = SKAction.playSoundFileNamed("smallHit.wav", waitForCompletion: false)
+    let hitSound = SKAction.playSoundFileNamed("smallHit.wav", waitForCompletion: false)
     
     init(parentNode: SKNode, barWidth: CGFloat,
          barOffset: CGFloat, health: CGFloat, entityManager: EntityManager) {
@@ -18,9 +17,9 @@ class HealthComponent: GKComponent {
         self.currentHealth = health
         self.entityManager = entityManager
         
-        healthBarFullWidth = barWidth
+        healthBarMaxWidth = barWidth
         healthBar = SKShapeNode(rectOf:
-            CGSize(width: healthBarFullWidth, height: 5), cornerRadius: 1)
+            CGSize(width: healthBarMaxWidth, height: 5), cornerRadius: 1)
         healthBar.fillColor = UIColor.red
         healthBar.strokeColor = UIColor.red
         healthBar.position = CGPoint(x: 0, y: barOffset)
@@ -30,10 +29,6 @@ class HealthComponent: GKComponent {
         super.init()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     @discardableResult func takeDamage(_ damage: CGFloat) -> Bool {
         currentHealth = max(currentHealth - damage, 0)
         
@@ -41,7 +36,7 @@ class HealthComponent: GKComponent {
         let healthScale = currentHealth/maxHealth
         let scaleAction = SKAction.scaleX(to: healthScale, duration: 0.5)
         
-        healthBar.run(SKAction.group([soundAction, scaleAction]))
+        healthBar.run(SKAction.group([hitSound, scaleAction]))
         
         if currentHealth == 0 {
             if let entity = entity {
@@ -53,6 +48,10 @@ class HealthComponent: GKComponent {
         }
         
         return currentHealth == 0
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }

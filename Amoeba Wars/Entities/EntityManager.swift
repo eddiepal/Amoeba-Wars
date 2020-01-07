@@ -13,7 +13,7 @@ class EntityManager {
         let moveSystem = GKComponentSystem(componentClass: MoveComponent.self)
         let aiSystem = GKComponentSystem(componentClass: AiComponent.self)
         let attackSystem = GKComponentSystem(componentClass: AttackComponent.self)
-        return [baseSystem, moveSystem, aiSystem]
+        return [baseSystem, moveSystem, aiSystem, attackSystem]
     }()
     
     // 2

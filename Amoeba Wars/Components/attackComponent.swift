@@ -1,5 +1,3 @@
-
-
 import Foundation
 import SpriteKit
 import GameplayKit
@@ -19,9 +17,9 @@ class AttackComponent: GKComponent {
         self.destroySelf = destroySelf
         self.damageRate = damageRate
         self.recievedDamage = recievedDamage
-        self.sound = sound
         self.previousDamageTime = 0
         self.entityManager = entityManager
+        self.sound = sound
         super.init()
     }
 
@@ -30,41 +28,49 @@ class AttackComponent: GKComponent {
         super.update(deltaTime: seconds)
         
         guard let teamComponent = entity?.component(ofType: TeamComponent.self),
-            let spriteComponent = entity?.component(ofType: SpriteComponent.self) else {
+            let spriteComponent = entity?.component(ofType: SpriteComponent.self) else
+        {
                 return
         }
         
         var damageCaused = false
         let enemyEntities = entityManager.entitiesForTeam(teamComponent.team.oppositeTeam())
-        for enemyEntity in enemyEntities {
+        for enemyEntity in enemyEntities
+        {
             
             guard let enemySpriteComponent = enemyEntity.component(ofType: SpriteComponent.self),
-                let enemyHealthComponent = enemyEntity.component(ofType: HealthComponent.self) else {
+                let enemyHealthComponent = enemyEntity.component(ofType: HealthComponent.self) else
+            {
                     continue
             }
             
-            // Check for intersection
-            if (spriteComponent.node.calculateAccumulatedFrame().intersects(enemySpriteComponent.node.calculateAccumulatedFrame())) {
+            // collision detection ... basically
+            if (spriteComponent.node.calculateAccumulatedFrame().intersects(enemySpriteComponent.node.calculateAccumulatedFrame()))
+            {
                 
                 if (CGFloat(CACurrentMediaTime() - previousDamageTime) > damageRate) {
                     
                     spriteComponent.node.parent?.run(sound)
-                    if (recievedDamage) {
+                    if (recievedDamage)
+                    {
                         damageCaused = true
-                    } else {
+                    } else
+                    {
                         previousDamageTime = CACurrentMediaTime()
                     }
                     
                     enemyHealthComponent.takeDamage(damage)
 
-                    if destroySelf {
+                    if destroySelf
+                    {
                         entityManager.remove(entity!)
                     }
                 }
             }
         }
         
-        if (damageCaused) {
+        if (damageCaused)
+        {
             previousDamageTime = CACurrentMediaTime()
         }
         

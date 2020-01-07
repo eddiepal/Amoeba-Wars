@@ -13,6 +13,7 @@
 		5921EC3C23C4D8B400952C42 /* HealthComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5921EC3B23C4D8B400952C42 /* HealthComponent.swift */; };
 		5921EC3E23C4DA7E00952C42 /* attackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5921EC3D23C4DA7E00952C42 /* attackComponent.swift */; };
 		5921EC4023C4E1B400952C42 /* LaserComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5921EC3F23C4E1B400952C42 /* LaserComponent.swift */; };
+		5921EC4223C4E7C100952C42 /* CrowdComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5921EC4123C4E7C100952C42 /* CrowdComponent.swift */; };
 		596C27B623914769006A805F /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B523914769006A805F /* SpriteComponent.swift */; };
 		596C27B8239147E8006A805F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B7239147E8006A805F /* Base.swift */; };
 		596C27BA23914806006A805F /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C27B923914806006A805F /* EntityManager.swift */; };
@@ -53,6 +54,7 @@
 		5921EC3B23C4D8B400952C42 /* HealthComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthComponent.swift; sourceTree = "<group>"; };
 		5921EC3D23C4DA7E00952C42 /* attackComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attackComponent.swift; sourceTree = "<group>"; };
 		5921EC3F23C4E1B400952C42 /* LaserComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaserComponent.swift; sourceTree = "<group>"; };
+		5921EC4123C4E7C100952C42 /* CrowdComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdComponent.swift; sourceTree = "<group>"; };
 		596C27B523914769006A805F /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		596C27B7239147E8006A805F /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		596C27B923914806006A805F /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				5921EC3B23C4D8B400952C42 /* HealthComponent.swift */,
 				5921EC3D23C4DA7E00952C42 /* attackComponent.swift */,
 				5921EC3F23C4E1B400952C42 /* LaserComponent.swift */,
+				5921EC4123C4E7C100952C42 /* CrowdComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				5921EC3423C4C75B00952C42 /* Fowleri.swift in Sources */,
 				5921EC3C23C4D8B400952C42 /* HealthComponent.swift in Sources */,
 				596C27C023914B24006A805F /* BaseComponent.swift in Sources */,
+				5921EC4223C4E7C100952C42 /* CrowdComponent.swift in Sources */,
 				5921EC3623C4C76500952C42 /* Proteus.swift in Sources */,
 				596C27BA23914806006A805F /* EntityManager.swift in Sources */,
 				59AB006723C4A717005356D6 /* MoveBehavior.swift in Sources */,

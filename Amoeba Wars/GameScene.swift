@@ -93,7 +93,7 @@ class GameScene: SKScene {
          //                           y: size.height/2)
         //addChild(baseLeft)
         
-        let baseLeft = Base(imageName: ImageName.Base_Left_Attack, team: .teamLeft)
+        let baseLeft = Base(imageName: ImageName.Base_Left_Attack, team: .teamLeft, entityManager: entityManager)
         if let spriteComponent = baseLeft.component(ofType: SpriteComponent.self) {
             spriteComponent.node.position = CGPoint(x: spriteComponent.node.size.width/2 + margin, y: size.height/2)
         }
@@ -107,7 +107,7 @@ class GameScene: SKScene {
          //                           y: size.height/2)
         //addChild(baseRight)
         
-        let baseRight = Base(imageName: ImageName.Base_Right_Attack, team: .teamRight)
+        let baseRight = Base(imageName: ImageName.Base_Right_Attack, team: .teamRight, entityManager: entityManager)
         if let spriteComponent = baseRight.component(ofType: SpriteComponent.self) {
             spriteComponent.node.position = CGPoint(x: size.width - margin - spriteComponent.node.size.width/2, y: size.height/2)
         }

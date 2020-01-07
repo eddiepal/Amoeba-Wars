@@ -10,8 +10,9 @@ class EntityManager {
     
     lazy var componentSystems: [GKComponentSystem] = {
         let baseSystem = GKComponentSystem(componentClass: BaseComponent.self)
-        return [baseSystem]
-    } ()
+        let moveSystem = GKComponentSystem(componentClass: MoveComponent.self)
+        return [baseSystem, moveSystem]
+    }()
     
     // 2
     init(scene: SKScene) {
@@ -85,11 +86,33 @@ class EntityManager {
         scene.run(SoundManager.sharedInstance.soundSpawn)
         
         // 3
-        let amoeba = Histolytica(team: team)
+        let amoeba = Histolytica(team: team, entityManager: self)
         if let spriteComponent = amoeba.component(ofType: SpriteComponent.self) {
             spriteComponent.node.position = CGPoint(x: teamSpriteComponent.node.position.x, y: CGFloat.random(min: scene.size.height * 0.25, max: scene.size.height * 0.75))
             spriteComponent.node.zPosition = Layer.Amoeba
         }
         add(amoeba)
+    }
+    
+    func entities(for team: Team) -> [GKEntity] {
+        return entities.compactMap{ entity in
+            if let teamComponent = entity.component(ofType: TeamComponent.self) {
+                if teamComponent.team == team {
+                    return entity
+                }
+            }
+            return nil
+        }
+    }
+    
+    func moveComponents(for team: Team) -> [MoveComponent] {
+        let entitiesToMove = entities(for: team)
+        var moveComponents = [MoveComponent]()
+        for entity in entitiesToMove {
+            if let moveComponent = entity.component(ofType: MoveComponent.self) {
+                moveComponents.append(moveComponent)
+            }
+        }
+        return moveComponents
     }
 }
